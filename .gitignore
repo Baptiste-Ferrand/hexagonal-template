@@ -1,0 +1,15 @@
+# IDE
+.vscode/
+.idea/
+.cursor/
+.cursorrules
+.cursorignore
+.cursorignore
+
+# ENV
+.env
+.venv/
+
+# PYTHON
+__pycache__/
+
