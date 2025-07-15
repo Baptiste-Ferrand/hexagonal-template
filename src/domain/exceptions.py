@@ -1,5 +1,5 @@
 class DomainError(Exception):
-    """Racine pour toutes les erreurs métier."""
+    """The root of all domain errors."""
     pass
 
 class InvalidConfirmPasswordError(DomainError):
