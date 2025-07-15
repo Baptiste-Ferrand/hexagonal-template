@@ -10,9 +10,8 @@ class Container:
         self.hasher = BcryptPasswordHasher()
 
         if self.env in ("dev", "test"):
-            # from src.adapters.inmemory.repositories.profile import InMemoryProfileRepository
-            # self.profile_repo = InMemoryProfileRepository()
-            print("test")
+            from src.adapters.inmemory.repositories.profile import InMemoryProfileRepository
+            self.profile_repo = InMemoryProfileRepository()
         else:
             from src.adapters.sqlalchemy.db import SessionLocal
             self.SessionFactory = SessionLocal

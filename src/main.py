@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from fastapi.middleware import Middleware
 
 from src.entrypoints.api.routers.profile import router as profile_router
 
